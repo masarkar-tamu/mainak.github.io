@@ -1,22 +1,36 @@
+# Site settings
 title: "Mainak Sarkar's Personal Website"
-description: "Welcome to my personal webpage"
-baseurl: ""  # The base URL if you are deploying to <username>.github.io (i.e. an empty string)
-
-# Author settings
-author:
-  name: "Mainak Sarkar"
-  avatar: "/assets/images/your-avatar.png"  # Place your image in /assets/images/ directory
-  bio: "PhD Student in Computer Vision"
-  location: "TAMU, USA"
-  email: "your_email@example.com"
-  twitter: your_twitter_handle  # optional
-  github: masarkar-tamu
+description: "PhD Student in Computer Vision"
+baseurl: ""  # Leave this empty for GitHub Pages (e.g. masarkar-tamu.github.io)
+url: "https://masarkar-tamu.github.io"  # Update with your GitHub Pages URL
 
 # Theme settings
 theme: minimal-mistakes-jekyll
 plugins:
   - jekyll-feed
   - jekyll-sitemap
+
+# Site author
+author:
+  name: "Mainak Sarkar"
+  avatar: "/assets/images/your-avatar.png"  # Replace with your avatar
+  bio: "PhD Student in Computer Vision at TAMU"
+  location: "TAMU, USA"
+  email: "your_email@example.com"
+  github: masarkar-tamu
+  twitter: your_twitter_handle  # Optional
+
+# Color scheme (Neon-inspired)
+minimal_mistakes_skin: "neon"  # Custom neon style (we'll define the styles in SCSS/CSS)
+
+# Navigation settings
+nav:
+  - title: "Home"
+    url: /
+  - title: "About"
+    url: /about/
+  - title: "Blog"
+    url: /blog/
 
 # Markdown options
 markdown: kramdown
@@ -25,3 +39,15 @@ kramdown:
 
 # Permalinks
 permalink: /:categories/:title/
+
+# Google Analytics (optional)
+google_analytics: UA-XXXXXXXX-X  # Replace with your Google Analytics tracking code
+
+# Social links (optional)
+social:
+  - title: "GitHub"
+    url: https://github.com/masarkar-tamu
+    icon: "fab fa-github"
+  - title: "Twitter"
+    url: https://twitter.com/your_twitter_handle
+    icon: "fab fa-twitter"

@@ -1,9 +1,38 @@
----
-# Only the main Sass file needs front matter (the dashes are enough)
-search: false
----
+// assets/css/main.scss
 
-@charset "utf-8";
+// Import Minimal Mistakes default styles
+@import "minimal-mistakes";
 
-@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
-@import "minimal-mistakes"; // main partials
+// Custom neon color scheme
+$primary-color: #00ff00; // Neon green
+$secondary-color: #ff00ff; // Neon pink/purple
+$body-background-color: #000000; // Black background
+$text-color: #00ff00; // Neon green text
+$link-color: $primary-color;
+$link-hover-color: lighten($primary-color, 15%);
+$button-color: $secondary-color;
+$button-hover-color: darken($secondary-color, 10%);
+
+// Apply these custom variables to the body and headings
+body {
+  background-color: $body-background-color;
+  color: $text-color;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: $primary-color;
+}
+
+a {
+  color: $link-color;
+  &:hover {
+    color: $link-hover-color;
+  }
+}
+
+button {
+  background-color: $button-color;
+  &:hover {
+    background-color: $button-hover-color;
+  }
+}
